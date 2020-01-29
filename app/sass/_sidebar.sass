@@ -1,0 +1,202 @@
+aside.sidebar
+  width: 100%
+  max-width: 302px
+  height: auto
+  display: flex
+  flex-flow: column
+  justify-content: flex-start
+
+  .search
+    width: 100%
+    height: auto
+    position: relative
+    margin-bottom: 38px
+    &:after
+      content: ""
+      width: 14px
+      height: 14px
+      position: absolute
+      right: 15px
+      top: 50%
+      transform: translateY(-50%)
+      background: url("data:image/pngbase64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAByElEQVQ4T42Sv2sUQRTHv9/ZtTlt1OIaEZPGRlC4JpfdmVtS+6tTQSMSRKzEQrCyUewtTCNoIdocNgGJYIrJ7K6FCIKQFIkYCxtJoX/AzTyZ9faQ04CvmTfvvc+bmfcdYmx5nh9MyIsCXAUwQ+BHAF4lSfLMWvu5rWtXRifLsuOJUk8BzINcpch3IfdDpADgQd5wzq38CbPf7x/al6ZvAMxS5BrTdNVaO4pFRVGcCKPRMshTKoQFW9cfJicOtL4pwLIAp8uyfD19pTzPZxW5RmBjvSzPTECj9XsAu+53MEyDcT/Q+p4Ad4LIyaqqvsQYjda7IFecc0v/ghowz68I+Qjkeeeca8EtiHx0VXVhL9AYcwsi9wXIy7L81IADrR8KcN2HUNR1vTENF0WRBu/XAHRUksy3g2PzeOCdkNskF51zOy3c6/U6BzqdBwLchsiSq6ooWWONjsaYsxAZAvgG8jmAHYZwWMhzMd1UiryFUlHPpnEDNppl2VxQ6m50x9ONuS0BnhC4BGABQK2S5LK19usEbBsYY2ZIHhGRn91ud3M4HPoYA/ASInMAXOr94l/gXpPNsuyoUuoFgRzA+n+D4y94LHj/GKT/BYt4r8hhH2WCAAAAAElFTkSuQmCC") no-repeat center
+    input
+      width: 100%
+      height: 39px
+      border: 2px solid #a8a8a8
+      background: transparent
+      padding: 15px
+      color: #3e3d3d
+      font-size: 16px
+      &::placeholder
+        font-family: "Crimson Text"
+        font-style: italic
+        font-size: 14px
+
+
+  h3.title
+    color: #3e3d3d
+    font-family: Montserrat
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 1.81px
+    line-height: 1
+
+  .latest-posts
+    width: 100%
+    height: auto
+    display: flex
+    flex-flow: column
+    h3.title
+      margin-bottom: 5px
+    &__list
+      width: 100%
+      height: auto
+      display: flex
+      flex-flow: column
+      margin: 0
+      padding: 0
+      li
+        width: 100%
+        height: 109px
+        display: flex
+        justify-content: space-between
+        position: relative
+        margin: 33px 0
+        &:nth-child(n)
+          &:after
+            content: ''
+            position: absolute
+            display: inline-block
+            width: 100%
+            height: 1px
+            background-color: #b7b7b7
+            bottom: -33px
+            left: 0
+        &:last-child
+          &:after
+            display: none
+        img
+          width: 113px
+          height: 109px
+          margin-right: 17px
+        .post-text
+          width: 163px
+          height: auto
+          line-height: 1.4
+          display: flex
+          flex-flow: column
+          justify-content: space-between
+          a
+            color: #3e3d3d
+          h4
+            color: #3e3d3d
+            font-family: Montserrat
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 1.2px
+            margin: 0
+          p
+            color: #3e3d3d
+            font-family: "Crimson Text"
+            font-size: 14px
+            font-style: italic
+            letter-spacing: 1.2px
+            margin: 0
+
+
+  .categories, .archives
+    width: 100%
+    height: auto
+    margin: 33px 0
+    &__list
+      li
+        width: 100%
+        height: 60px
+        display: flex
+        align-items: center
+        position: relative
+        &:nth-child(n)
+          &:after
+            content: ''
+            position: absolute
+            display: inline-block
+            width: 100%
+            height: 1px
+            background-color: #b7b7b7
+            bottom: 0
+            left: 0
+      a
+        color: #3e3d3d
+        font-family: "Crimson Text"
+        font-size: 16px
+        font-style: italic
+        position: relative
+        padding-left: 16px
+        &:before
+          content: ''
+          position: absolute
+          width: 0
+          height: 0
+          top: 50%
+          left: 3px
+          transform: translateY(-50%)
+          border-top: 5px solid transparent
+          border-bottom: 5px solid transparent
+          border-left: 5px solid #3e3d3d
+
+
+  .photos
+    width: 100%
+    height: auto
+    margin: 33px 0
+    &__list
+      width: 100%
+      height: auto
+      display: flex
+      flex-flow: row wrap
+      align-items: flex-start
+      justify-content: space-between
+      margin-top: 38px
+      li
+        width: 90px
+        height: 87px
+        margin-bottom: 14px
+        a
+          width: 100%
+          height: 100%
+          display: inline-block
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(0, 0, 0, 0.4)
+            opacity: 0
+            -webkit-transition: .3s
+            transition: .3s
+          &:after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            z-index: 10
+            opacity: 0
+            transition: .3s
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='30px' height='30px'%3E%3Cpath fill-rule='evenodd' fill='rgb(227, 227, 227)' d='M30.000,16.000 L16.000,16.000 L16.000,30.000 L14.000,30.000 L14.000,16.000 L-0.000,16.000 L-0.000,13.999 L14.000,13.999 L14.000,-0.001 L16.000,-0.001 L16.000,13.999 L30.000,13.999 L30.000,16.000 Z'/%3E%3C/svg%3E") no-repeat center
+          &:hover:before,
+          &:hover:after
+            opacity: 1
+          img
+            width: 100%
+            height: auto
