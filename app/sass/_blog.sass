@@ -1,0 +1,132 @@
+.content
+  width: 100%
+  height: auto
+  background-color: #e3e3e3
+  padding-top: 86px
+
+.blog
+  width: 821px
+  height: auto
+  display: flex
+  flex-flow: column
+  align-items: center
+  justify-content: flex-start
+
+  &__list
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+    &--item
+      width: 100%
+      height: auto
+      color: #3e3d3d
+      margin-bottom: 50px
+      img
+        width: 100%
+        height: auto
+        max-width: 821px
+        max-height: 373px
+        margin-bottom: 40px
+        object-fit: cover
+      a
+        color: #3e3d3d
+      h2
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 700
+        line-height: 18px
+        text-transform: uppercase
+        letter-spacing: 1.81px
+        margin-bottom: 12px
+      i
+        font-family: "Crimson Text"
+        font-size: 14px
+        font-style: italic
+        line-height: 18px
+        margin-bottom: 19px
+      .blog__article--activity
+        width: 820px
+        height: 37px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        border-top: 1px solid #b7b7b7
+        border-bottom: 1px solid #b7b7b7
+        margin: 19px 0
+        span
+          width: auto
+          height: 14px
+          color: #818181
+          font-family: "Crimson Text"
+          font-size: 14px
+          font-style: italic
+          padding-left: 40px
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            display: inline-block
+            width: 20px
+            height: 14px
+            top: 50%
+            left: 12px
+            transform: translateY(-50%)
+            background-repeat: no-repeat !important
+        .comments
+          span:before
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAALCAYAAACksgdhAAABcklEQVQoU2WRMWuTYRSFz7n5iC2ZRCRkEedMXR3bbooIbv4EnYzp0pB+3DebYycn/4J/wEGtIAi6OHx00drFkGIzhpL0u6e8IYXQ3vmc95zzvEwp/ZX0leQxSUoSbhzJhqQawDMANVNKnyW9cvfK3R82Go07AGLNV9R1fe7uZymllyQfZ1NOeR0RJwAOSd4HcLlm2iB5VJblKKXUA7C7NEnqd7vdn1VV7ZLczEmSlm0BFCT/lWX5PaXUB7B9beo1m82TxWLxluS9Vb1csSnprqQv7n5wKwnAL5LbADYyjDye5H8z+2Nms8FgcL6edESyFxG/AbzLm1YQW5I+AThw9yWY0Wj0RtJOrveNZL/dbv8Yj8ftoihoZheSzMzmrVZrNp1O87bIuutNFYAzSZP8mpkVEfG+0+l8nEwm+wAeAbiIiDnJLQCnOekJgAcZFYC5pA6ApwBmGT3JD6uPzRQXEXGchbfO3Z+b2Qsz2xsOh6c3BVfR1cPYgBxVbgAAAABJRU5ErkJggg==")
+        .views
+          span:before
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAMCAYAAACA0IaCAAACSklEQVQ4T3VTXWiOYRi+roc387NPcfJ9YXGGlLKRtfJTqJGyE0n+ysFSUraiPva+9/t+X6MdKGd2MtZ2ICd2sGJHHIyilJ8DSijUJi0HlmX6nkuP3k8jnqOn++e67vu675v4xzOzFpIHSLZKKgJgHvYFwBNJo6VS6V5nZ+ePuen1oF82M1sJICW5B8BrknclvfHefyLZ4JxbC6Bd0maSj7z3FTN7XAf8DZZlWbOk6wC+SkoKhcKDrq6uGUmsVCrd3vulAK4mSTJVqVS2Bm5JzQDOJkkyFAB/gZnZBpK3AdxpbGw8H0B6e3uXz87OnnPODUvaBeAogEjSUTN72t/fH01OTl4A0E3yVBzHw8yybLuky5KeAzhlZj4naCDZHkXReLlc/pwnD5Jc7r3vMLNvIS7LsouSzkg6yDRNQ88Li8XiprqgZrbIOXeiVquNpmn6vq5JPphbJDviOH4W7EGGNE1vktwSKhuTtCaKotZyuTyVV1UgOU7yRhzHV+pgWZa1SRpyzu3r6el5OYdktXNuL81sPck+AF7SYTObDkFpmlYBdJA8FMfxi2q1uqJWqw1KmiqVSkf+Xou5AyiSHCH52XsfdPtoZvNJDgBoA/AOQBPJD97748GfE54k+T2I/xssfKrV6irv/YCkJgB9URSNhLbNbIdzriXsW7FYHJ2YmFhAcj/JeaFKSTNmdv8PsFyrJc6505KOhbYBPCQZBjQtaQGAjQB2AlgG4FqSJJf+ewF1R17lbknbAKwDsBjAd5JvJY1LGjOzV39f4k9bAykugViUOwAAAABJRU5ErkJggg==")
+        .category
+          span:before
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAALCAYAAACksgdhAAABU0lEQVQoU42SPUsdQRiFnzPqrsQmIHhzmwSSJmIKq/T5C5Z2+Re32jt3L/myFBT/gGAr+UIiFkFIl7QpQgoRtrASAu5uvDlh5C4IEczANGfe8z5n3hnFGB8D94FZ4FJSH9gAzoAHtneAA0lzth1COFNZlvu2n0r6bnsOSFvAKbAILAAXwB/gbjrTaDQ6BL7afgnMZ1k2CSG0dV3neZ7/bpomNcjyPG/atl1NKRLpve3j4XD4iltWjPGJpK1E+iDpc1EUrzuPbY3H49Usy34OBoPzTi/LcsX29hUJ+NLr9d5UVTUzLZiX9Nz2J+BH0vr9/qSqqhVJm4n0DlgGvqXsXVdJEyAk6lRrJS3aXupIte094E4qkJSmO5E0c81US3pkey2Z3gIfi6LY/o9B3Ash7KZ4R8AvSXu2uzv945/GfWh7XTHGF5KeSWquRbkJmh43/ZqTv5eUlJ/vL+5+AAAAAElFTkSuQmCC")
+      p
+        font-family: "Crimson Text"
+        font-size: 14px
+        font-weight: 400
+        line-height: 25px
+        letter-spacing: 1.4px
+        margin: 0
+      .blog__article--btn
+        width: 135px
+        height: 39px
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 2px solid #3e3d3d
+        color: #3e3d3d
+        font-family: Montserrat
+        font-size: 13px
+        font-weight: 400
+        letter-spacing: 1.47px
+        margin-top: 25px
+        &:hover
+          text-decoration: none
+          background: #3e3d3d
+          color: #e3e3e3
+
+.pagination
+  width: auto
+  height: auto
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+  li
+    width: 38px
+    height: 38px
+    border: 1px solid #3e3d3d
+    margin: 0 2.5px
+    a
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      text-decoration: none
+      &:hover
+        text-decoration: none
+        background: #3e3d3d
+        color: #e3e3e3
