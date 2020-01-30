@@ -26,29 +26,36 @@
         <img src="img/@2x/Icon_Logo.png" alt="Logo">
         <h2>ATLANTIDA</h2>
       </a>
-      <nav class="topnav">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">SERVICES</a>
-        <a href="#">History</a>
-        <a href="#">Team</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Prices</a>
-        <a class="active" href="#">Blog</a>
-        <a href="#">Contact</a>
-      </nav>
-      <div class="social">
-        <a class="facebook" href="#">
-          <img src="img/_src/icons/Facebook@2x.png" alt="facebook" title="Facebook">
-        </a>
-        <span class="vline"></span>
-        <a class="tweter" href="#">
-          <img src="img/_src/icons/Tweter@2x.png" alt="tweter" title="Tweter">
-        </a>
-        <span class="vline"></span>
-        <a class="behance" href="#">
-          <img src="img/_src/icons/Behance@2x.png" alt="behance" title="Behance">
-        </a>
+      <div class="topnav-wrap">
+        <nav class="topnav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">SERVICES</a>
+          <a href="#">History</a>
+          <a href="#">Team</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Prices</a>
+          <a class="active" href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="social">
+          <a class="facebook" href="#">
+            <img src="img/_src/icons/Facebook@2x.png" alt="facebook" title="Facebook">
+          </a>
+          <span class="vline"></span>
+          <a class="tweter" href="#">
+            <img src="img/_src/icons/Tweter@2x.png" alt="tweter" title="Tweter">
+          </a>
+          <span class="vline"></span>
+          <a class="behance" href="#">
+            <img src="img/_src/icons/Behance@2x.png" alt="behance" title="Behance">
+          </a>
+        </div>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </div>
@@ -220,7 +227,8 @@
       </div>
       <div class="latest-posts">
         <h3 class="title">Latest POSTS</h3>
-        <ul class="latest-posts__list">
+        <button class="accordion">Latest POSTS</button>
+        <ul class="latest-posts__list panel">
           <li class="post">
             <img src="img/@2x/post-1.jpg" alt="">
             <div class="post-text">
@@ -253,7 +261,8 @@
       </div>
       <div class="categories">
         <h3 class="title">Categories</h3>
-        <ul class="categories__list">
+        <button class="accordion">Categories</button>
+        <ul class="categories__list panel">
           <li><a href="#">Photography</a></li>
           <li><a href="#">Website Design</a></li>
           <li><a href="#">Branding</a></li>
@@ -264,7 +273,8 @@
       </div>
       <div class="archives">
         <h3 class="title">Archives</h3>
-        <ul class="archives__list">
+        <button class="accordion">Archives</button>
+        <ul class="archives__list panel">
           <li><a href="#">January 2015</a></li>
           <li><a href="#">December 2015</a></li>
           <li><a href="#">November 2015</a></li>
@@ -274,7 +284,8 @@
       </div>
       <div class="photos">
         <h3 class="title">FLICKR PHOTOS</h3>
-        <ul class="photos__list">
+        <button class="accordion">FLICKR PHOTOS</button>
+        <ul class="photos__list panel">
           <li><a href="#"><img src="img/@2x/1.jpg" alt=""></a></li>
           <li><a href="#"><img src="img/@2x/2.jpg" alt=""></a></li>
           <li><a href="#"><img src="img/@2x/3.jpg" alt=""></a></li>
@@ -298,11 +309,13 @@
     <div class="footer-inner">
       <div class="info">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-        <h3>ATLANTIDA STUDIO</h3>
-        <p>Steven Bernson, Attorney at Law <br>
-          1556 Broadway, suite 416 <br>
-          New York, NY, 10120, USA
-        </p>
+        <div class="address">
+          <h3>ATLANTIDA STUDIO</h3>
+          <p>Steven Bernson, Attorney at Law <br>
+            1556 Broadway, suite 416 <br>
+            New York, NY, 10120, USA
+          </p>
+        </div>
         <div class="contacts">
           E-mail: <a href="mailto:elegantflyers@gmail.com">elegantflyers@gmail.com</a> <br>
           <a href="tel:+84956654972">+84 956 654 972</a>

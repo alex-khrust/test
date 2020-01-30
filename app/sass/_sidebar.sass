@@ -5,6 +5,7 @@ aside.sidebar
   display: flex
   flex-flow: column
   justify-content: flex-start
+  margin-left: 50px
 
   .search
     width: 100%
@@ -34,7 +35,8 @@ aside.sidebar
         font-size: 14px
 
 
-  h3.title
+  h3.title,
+  .accordion
     color: #3e3d3d
     font-family: Montserrat
     font-size: 16px
@@ -42,6 +44,7 @@ aside.sidebar
     text-transform: uppercase
     letter-spacing: 1.81px
     line-height: 1
+    outline: none
 
   .latest-posts
     width: 100%
@@ -200,3 +203,71 @@ aside.sidebar
           img
             width: 100%
             height: auto
+
+
+@media (max-width: 768px)
+  .content .container
+    flex-flow: column
+  aside.sidebar
+    width: 100%
+    max-width: initial
+    height: auto
+    display: flex
+    flex-flow: column
+    justify-content: flex-start
+    margin: 0 auto
+    order: 1
+    .latest-posts,
+    .categories,
+    .archives,
+    .photos
+      margin: 0 0 10px
+    .latest-posts__list
+      max-width: 302px
+      margin: 0 auto
+    .photos__list
+      max-width: 302px
+      margin: 38px auto 0
+    h3.title
+      display: none
+  .blog
+    order: 2
+
+
+
+  .accordion
+    width: 100%
+    height: 39px
+    background-color: transparent
+    cursor: pointer
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    border: 2px solid #3e3d3d
+    padding: 0 15px
+    transition: 0.4s
+
+  .accordion.active,
+  .accordion:hover
+    background: #3e3d3d
+    color: #e3e3e3 !important
+
+  .accordion:after
+    content: '\002B'
+    font-size: 20px
+    font-weight: bold
+    margin-left: 5px
+
+  .accordion.active:after
+    content: "\2212"
+    font-size: 20px
+    font-weight: bold
+
+  .panel
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+
+@media (min-width: 768px)
+  .accordion
+    display: none
